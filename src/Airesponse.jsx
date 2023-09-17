@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import axios from 'axios'
 const Airesponse = ({userInputText}) => {
 
+    //  const apiKey =(import.meta.env.VITE_REACT_APP_OPENAI_API_KEY)
+    //  console.log(apiKey)
+  
+
     const [input, setInput] = useState("hey , how are you?")
 
    // ai response answer
@@ -28,7 +32,7 @@ const Airesponse = ({userInputText}) => {
             {
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer ${'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'}`,
+                    Authorization: "Bearer " + (import.meta.env.VITE_REACT_APP_OPENAI_API_KEY),
                 },
             }
         );
