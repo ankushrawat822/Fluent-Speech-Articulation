@@ -19,7 +19,7 @@ const Airesponse = ({userInputText}) => {
                 prompt: `"read the given text and help me improve my stammering , fluency , english and overall communication skills. I want you to only answer two things , first is what mistakes I did in my text , and words I am repeating often and what better ways I could have said that. note that the text I will give you is spoken by me and not written so try to think in that way. and try to answer in no more than 350 characters. If the given text has only few words then try to suggest related things about given text that user could have also said. so the given text is "${input}"`,
 
                 model: 'text-davinci-003',
-                temperature: 0.5,
+                temperature: 0,
                 max_tokens: 256,
                 // top_p: 1,
                 // frequency_penalty: 0,
@@ -28,7 +28,7 @@ const Airesponse = ({userInputText}) => {
             {
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer ${'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'}`,
+                    Authorization: `Bearer ${'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'}`,
                 },
             }
         );
