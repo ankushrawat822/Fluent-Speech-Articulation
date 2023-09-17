@@ -13,13 +13,13 @@ const Articulation = () => {
     const [isImageLoad, setisImageLoad] = useState(false)
     // images array
     const image = [
-        'src/images/img1.jpg',
-        'src/images/img2.jpg',
-        'src/images/img3.jpg',
-        'src/images/img4.jpg',
-        'src/images/img5.jpg',
-        'src/images/img6.jpg',
-        'src/images/img7.jpg',
+        '/images/img1.jpg',
+        '/images/img2.jpg',
+        '/images/img3.jpg',
+        '/images/img4.jpg',
+        '/images/img5.jpg',
+        '/images/img6.jpg',
+        '/images/img7.jpg',
     ]
 
     // emotions array
